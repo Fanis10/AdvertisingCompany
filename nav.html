@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="@@description">
 	<meta name="keywords" content="">
-	<link rel="stylesheet" href="css/select.css">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Услуги</title>
+	<title>Навигация</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
 
@@ -24,12 +24,55 @@
 				<a href="letters2.html">Световые короба</a>
 				<a href="letters3.html">Широкоформатная печать</a>
 				<a href="letters4.html">Интерьерная печать</a>
+				<a href="letters5.html">Рекламные Вывески</a>
+				<a href="leaflets.html">Листовки, Флаеры, Буклеты</a>
+				<a href="portfolio.html">Портфолио</a>
+				<a href="contacts.html">Контакты</a>
+				<a href="contacts2.html">Контакты2</a>
+				<a href="404.html">404</a>
+
+				<button class="nav__btn" data-modal="contactModal">Модальное окно</button>
 			</ul>
 		</div>
 	</section>
 
-	<script src="js/select.js"></script>
-<script src="js/libs.min.js"></script>
+
+	<div class="modal" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15 0C23.295 0 30 6.705 30 15C30 23.295 23.295 30 15 30C6.705 30 0 23.295 0 15C0 6.705 6.705 0 15 0ZM20.385 7.5L15 12.885L9.615 7.5L7.5 9.615L12.885 15L7.5 20.385L9.615 22.5L15 17.115L20.385 22.5L22.5 20.385L17.115 15L22.5 9.615L20.385 7.5Z" fill="#797979"/>
+				</svg>
+			</button>
+			<div class="modal__content">
+				<div class="modal__content-left">
+					<div class="modal__content-title">Оставьте заявку, и мы с вами свяжемся</div>
+					<form class="form modal__form">
+						<fieldset class="form-group modal__form-group">
+							<input type="text" placeholder="Ваше имя / название компании ">
+						</fieldset>
+						<fieldset class="form-group modal__form-group">
+							<input type="email" placeholder="E-mail">
+						</fieldset>
+						<fieldset class="form-group modal__form-group">
+							<input type="tel" placeholder="Телефон">
+						</fieldset>
+						<fieldset class="form-group modal__form-group">
+							<textarea class="form-textarea" placeholder="Ваши вопросы"></textarea>
+						</fieldset>
+						<fieldset class="form-group modal__form-group">
+							<button class="form-btn modal__form-btn">Отправить</button>
+						</fieldset>
+					</form>
+				</div>
+				<div class="modal__content-right">
+					<img src="img/modal-img.webp" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>

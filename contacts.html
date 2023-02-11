@@ -8,7 +8,7 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Главная</title>
+	<title>Контакты</title>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
 </head>
 
@@ -81,262 +81,61 @@
    </div>
 </header>
 
-	<section class="main">
-		<div class="container">
-			<div class="main__inner">
-				<div class="main__left">
-					<div class="main__img">
-						<img src="img/main.svg" alt="">
-					</div>
-				</div>
-				<div class="main__right">
-					<h1 class="main__subtitle">Добро пожаловать <br> в рекламную компанию М4!
-					</h1>
-					<div class="main__desc">
-						<p>Мы более 10 лет занимаемся производством наружной рекламы и полиграфии.</p>
-						<p>Найдем подходящее решение для Вашего заказа!</p>
-						<p>Оставьте заявку и мы свяжемся с Вами.</p>
-					</div>
-					<button class="main__btn btn-yellow">Оставить заявку</button>
-				</div>
+	<section class="contacts">
+		<div class="contacts__inner">
+			<div class="contacts__left">
+				<div id="map" class="map"></div>
 			</div>
-		</div>
-	</section>
-	<section class="advantages">
-		<div class="container">
-			<div class="advantages__inner">
-				<div class="advantages__title display3">
-					<h3>ПОЧЕМУ ВЫБИРАЮТ <br> ИМЕННО НАС?</h3>
+			<div class="contacts__right">
+				<div class="contacts__right-wrapp">
+					<h1 class="contacts__title">Пишите, звоните. <span>Всегда рады Вас видеть!</span></h1>
+					<div class="contacts__subtitle">Новороссийск</div>
+					<div class="contacts__socials">
+						<div class="contacts__socials-left">
+							<i class="contacts__tel-icon">
+								<img src="img/tel2.svg" alt="">
+							</i>
+							<div class="contacts__social-connection">
+								<div class="contacts__social-networks">
+									<a class="contacts__social" href="tel:8 (909) 44-55-000">8 (909) 44-55-000</a>
+									<div class="contacts__social-messengers">
+										<a class="contacts__social-telegram" href="">
+											<img src="img/telegram2.svg" alt="">
+										</a>
+										<a class="contacts__social-whatsapp" href="">
+											<img src="img/whatsapp2.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<a class="contacts__social contacts__social" href="tel:8 (8617) 69-69-11">8 (8617) 69-69-11</a>
+							</div>
+						</div>
+						<div class="contacts__socials-right">
+							<a class="contacts__social contacts__social-nav" href="">
+								<i>
+									<img src="img/nav.svg" alt="">
+								</i>
+								<span>ул. Энгельса 84, офис 44</span>
+							</a>
+							<a class="contacts__social contacts__social-mail" href="mailto:info@m4r.ru">
+								<i>
+									<img src="img/mail.svg" alt="">
+								</i>
+								<span>info@m4r.ru</span>
+							</a>
+						</div>
+					</div>
+					<div class="contacts__subtitle contacts__mode">Режим работы:</div>
+					<div class="contacts__info">
+						Понедельник - пятница: с 9:00 до 18:00 <br>
+						Суббота, воскресенье: выходные дни
+					</div>
+					<div class="contacts__subtitle contacts__title-btns">Так-же мы есть в других городах:</div>
+					<div class="contacts__btns">
+						<button class="contacts__btn">Анапа</button>
+						<button class="contacts__btn">Геленджик</button>
+					</div>
 				</div>
-				<div class="advantages__items">
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Решение любой задачи</div>
-					</div>
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon2.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Только проверенные материалы</div>
-					</div>
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon3.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Скорость исполения</div>
-					</div>
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon4.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Нестандартные решения</div>
-					</div>
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon5.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Современное производство</div>
-					</div>
-					<div class="advantages__item">
-						<div class="advantages__item-icon">
-							<img src="img/advantages-icon6.svg" alt="">
-						</div>
-						<div class="advantages__item-desc">Гарантия качества</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="offers">
-		<div class="container">
-			<div class="offers__inner">
-				<div class="offers__title display3">
-					<h3>Мы предлагаем</h3>
-				</div>
-				<div class="offers-cards">
-					<a href="" class="offers-card offers-card__1">
-    <div class="offers-card__img">
-        <img src="img/offers.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Вывески<span>от 5 000 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__2">
-    <div class="offers-card__img">
-        <img src="img/offers2.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon2.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Объёмные<br> буквы<span>от 60 руб/см</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__3">
-    <div class="offers-card__img">
-        <img src="img/offers3.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon3.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Гибкий<br> неон<span>от 2 000 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__4">
-    <div class="offers-card__img">
-        <img src="img/offers4.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon4.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Согласование<br> рекламы<span>от 1 000 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__5">
-    <div class="offers-card__img">
-        <img src="img/offers5.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon5.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Брендирование<br> транспорта<span>от 1 500 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__6">
-    <div class="offers-card__img">
-        <img src="img/offers6.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon6.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Стенды<span>от 1 000 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__7">
-    <div class="offers-card__img">
-        <img src="img/offers7.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon7.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            УФ печать<span>от 5 000 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__8">
-    <div class="offers-card__img">
-        <img src="img/offers8.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon8.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Широко-<br>форматная<br> печать<span>от 1 500 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__9">
-    <div class="offers-card__img">
-        <img src="img/offers9.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon9.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Наклейки<span>от 10 руб/шт</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__10">
-    <div class="offers-card__img">
-        <img src="img/offers10.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon10.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Таблички<span>от 300 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__11">
-    <div class="offers-card__img">
-        <img src="img/offers11.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon11.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Фрезеровка<span>от 30 руб</span>
-        </div>
-    </div>
-</a>
-					<a href="" class="offers-card offers-card__12">
-    <div class="offers-card__img">
-        <img src="img/offers12.webp" alt="">
-    </div>
-    <div class="offers-card__desc">
-        
-        <div class="offers-card__icon">
-            <img src="img/offers-icon12.svg" alt="">
-        </div>
-        <div class="offers-card__title">
-            Панель-<br>кронштейны<span>от 8 000 руб</span>
-        </div>
-    </div>
-</a>
-				</div>
-				<button class="offers__btn btn-gray">ещё услуги</button>
-			</div>
-		</div>
-	</section>
-	<section class="connection">
-		<div class="container">
-			<div class="connection__inner">
-				<div class="connection__desc">
-					<h3 class="connection__title display3">Не нашли нужной позиции?</h3>
-					<div class="connection__subtitle">Мы изготавливаем на заказ. Оставьте заявку и наш менеджер свяжется с Вами!</div>
-				</div>
-				<button class="connection__btn btn-yellow">Оставить заявку</button>
 			</div>
 		</div>
 	</section>
@@ -467,6 +266,26 @@
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
+	<script type="text/javascript">
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [44.707585, 37.784210],
+            zoom: 15
+        });
+
+        var myPlacemark = new ymaps.Placemark([44.707585, 37.784210], null, {
+            iconLayout: 'default#image',
+            iconImageHref: "",
+            iconImageSize: [45, 60],
+            // iconImageOffset: [-15, -44]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+</script>
 </body>
 
 </html>
