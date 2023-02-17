@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="@@description">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Офсетная печать</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__content">
+              <div class="header-top__left">
+                 <div class="header-top__socials">
+                     <a href="" class="header-top__soacial">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M2.96873 0C2.18232 0.00306448 1.42899 0.316824 0.872906 0.872906C0.316824 1.42899 0.00306448 2.18232 0 2.96873V13.0313C0.00306448 13.8177 0.316824 14.571 0.872906 15.1271C1.42899 15.6832 2.18232 15.9969 2.96873 16H13.0313C13.8177 15.9969 14.571 15.6832 15.1271 15.1271C15.6832 14.571 15.9969 13.8177 16 13.0313V2.96873C15.9969 2.18232 15.6832 1.42899 15.1271 0.872906C14.571 0.316824 13.8177 0.00306448 13.0313 0H2.96873ZM2.96873 1.45455H13.0313C13.8749 1.45455 14.5455 2.12509 14.5455 2.96873V13.0313C14.5455 13.8749 13.8749 14.5455 13.0313 14.5455H2.96873C2.76953 14.5467 2.57207 14.5084 2.38779 14.4328C2.20352 14.3571 2.0361 14.2456 1.89524 14.1048C1.75438 13.9639 1.6429 13.7965 1.56725 13.6122C1.4916 13.4279 1.45329 13.2305 1.45455 13.0313V2.96873C1.45455 2.12509 2.12509 1.45455 2.96873 1.45455Z" fill="white"/>
+                             <path d="M10.9873 4.44594L3.89964 7.41318C3.61443 7.55136 3.51796 7.82808 3.83071 7.97826L5.64899 8.60559L10.0454 5.65583C10.2854 5.47065 10.5312 5.52003 10.3197 5.72374L6.5438 9.43537L6.42519 11.0061C6.53505 11.2486 6.73621 11.2498 6.86452 11.1292L7.90917 10.0561L9.69831 11.5106C10.1139 11.7777 10.34 11.6053 10.4294 11.1158L11.6029 5.08313C11.7247 4.48057 11.517 4.21508 10.9873 4.44594Z" fill="white"/>
+                         </svg>
+                     </a>
+                     <a href="" class="header-top__soacial">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M8.33886 10.9472C5.74943 10.9472 4.27248 9.05053 4.21094 5.89453H5.50802C5.55063 8.21095 6.50685 9.19214 7.26427 9.39445V5.89453H8.48566V7.89232C9.23361 7.80634 10.0193 6.89595 10.2844 5.89453H11.5058C11.3022 7.12861 10.4501 8.03899 9.84421 8.41326C10.4501 8.71672 11.4206 9.51078 11.7899 10.9472H10.4454C10.1566 9.9862 9.43717 9.24272 8.48566 9.14157V10.9472H8.33886Z" fill="white"/>
+                             <path d="M2.96873 0C2.18232 0.00306448 1.42899 0.316824 0.872906 0.872906C0.316824 1.42899 0.00306448 2.18232 0 2.96873V13.0313C0.00306448 13.8177 0.316824 14.571 0.872906 15.1271C1.42899 15.6832 2.18232 15.9969 2.96873 16H13.0313C13.8177 15.9969 14.571 15.6832 15.1271 15.1271C15.6832 14.571 15.9969 13.8177 16 13.0313V2.96873C15.9969 2.18232 15.6832 1.42899 15.1271 0.872906C14.571 0.316824 13.8177 0.00306448 13.0313 0H2.96873ZM2.96873 1.45455H13.0313C13.8749 1.45455 14.5455 2.12509 14.5455 2.96873V13.0313C14.5455 13.8749 13.8749 14.5455 13.0313 14.5455H2.96873C2.76953 14.5467 2.57207 14.5084 2.38779 14.4328C2.20352 14.3571 2.0361 14.2456 1.89524 14.1048C1.75438 13.9639 1.6429 13.7965 1.56725 13.6122C1.4916 13.4279 1.45329 13.2305 1.45455 13.0313V2.96873C1.45455 2.12509 2.12509 1.45455 2.96873 1.45455Z" fill="white"/>
+                         </svg>
+                     </a>
+                     <a href="" class="header-top__soacial">
+                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M13.6625 2.32604C12.9256 1.58572 12.0482 0.998791 11.0812 0.599453C10.1142 0.200115 9.07702 -0.00364427 8.03013 4.93304e-05C3.64339 4.93304e-05 0.0683074 3.55804 0.0642893 7.92603C0.0642893 9.32503 0.431944 10.686 1.12607 11.891L0 16L4.223 14.898C5.39126 15.5309 6.70008 15.8627 8.03013 15.863H8.03415C12.4219 15.863 15.996 12.305 16 7.93303C16.001 6.89108 15.7949 5.85922 15.3935 4.89692C14.9922 3.93461 14.4035 3.06087 13.6615 2.32604H13.6625ZM8.03013 14.521C6.84379 14.5214 5.67926 14.2036 4.65896 13.601L4.41788 13.457L1.91261 14.111L2.58162 11.678L2.42491 11.427C1.76173 10.3774 1.411 9.16206 1.41336 7.92203C1.41336 4.29604 4.38373 1.33805 8.03415 1.33805C8.9038 1.33649 9.76517 1.50632 10.5686 1.83774C11.372 2.16915 12.1016 2.6556 12.7152 3.26904C13.331 3.88009 13.8192 4.60646 14.1516 5.40627C14.484 6.20607 14.6541 7.06348 14.6519 7.92903C14.6479 11.568 11.6775 14.521 8.03013 14.521ZM11.6615 9.58703C11.4636 9.48803 10.4862 9.00903 10.3024 8.94103C10.1195 8.87603 9.98593 8.84203 9.85535 9.04003C9.72174 9.23703 9.34003 9.68603 9.22551 9.81503C9.111 9.94803 8.99246 9.96303 8.79357 9.86503C8.59568 9.76503 7.95379 9.55703 7.19437 8.88003C6.60171 8.35503 6.20492 7.70503 6.08639 7.50803C5.97187 7.31003 6.07534 7.20403 6.17478 7.10503C6.26218 7.01703 6.37267 6.87303 6.47212 6.75903C6.57257 6.64503 6.60572 6.56103 6.67102 6.42903C6.73631 6.29503 6.70517 6.18104 6.65595 6.08204C6.60572 5.98304 6.20894 5.00604 6.04118 4.61204C5.88046 4.22304 5.71672 4.27704 5.59417 4.27204C5.47966 4.26504 5.34606 4.26504 5.21245 4.26504C5.11156 4.26754 5.01228 4.29077 4.92084 4.33327C4.82939 4.37578 4.74776 4.43664 4.68106 4.51204C4.49824 4.71004 3.98694 5.18904 3.98694 6.16604C3.98694 7.14303 4.70015 8.08203 4.8006 8.21503C4.89904 8.34803 6.2009 10.347 8.19889 11.207C8.67102 11.412 9.04269 11.533 9.333 11.625C9.81014 11.777 10.2411 11.754 10.5846 11.705C10.9663 11.647 11.7609 11.225 11.9287 10.762C12.0934 10.298 12.0934 9.90203 12.0432 9.81903C11.994 9.73503 11.8604 9.68603 11.6615 9.58703Z" fill="white"/>
+                         </svg>
+                     </a>
+                 </div>
+              </div>
+                <div class="header-top__right">
+                    <div class="header-top__select custom_select">
+                        <select>
+                            <option value="Новороссийск">Новороссийск</option>
+                            <option value="Анапа">Анапа</option>
+                        </select>
+                    </div>
+                    <a class="header-top__tel" href="tel:8 (909) 44-55-000">8 (909) 44-55-000</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="header-bottom">
+       <div class="container">
+           <div class="header-bottom__inner">
+               <div class="header-bottom__burger">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+               </div>
+               <div class="header-bottom__left">
+                   <a class="header-bottom__logo" href="index.html">
+                       <img src="img/logo.svg" alt="">
+                   </a>
+               </div>
+               <div class="header-bottom__right">
+                   <ul class="header-bottom__list">
+                       <li class="header-bottom__link header-bottom__link--active"><a href="">Главная </a></li>
+                       <li class="header-bottom__link"><a href="">Услуги</a></li>
+                       <li class="header-bottom__link"><a href="">Портфолио</a></li>
+                       <li class="header-bottom__link"><a href="">Контакты </a></li>
+                       <li class="header-bottom__link"><a href="">Информация</a></li>
+                   </ul>
+               </div>
+               <a class="header-bottom__tel" href="tel:8 (909) 44-55-000">
+                   <img src="img/tel.svg" alt="">
+               </a>
+           </div>
+       </div>
+   </div>
+</header>
+
+	<section class="services-top">
+		<div class="container">
+			<div class="services-top__inner">
+				<a href="">Офсетная печать</a>
+				<div class="services-top__btn services-main__top-btn">
+					<div class="services-top__close services-main__menu-close">
+						<span></span>
+						<span></span>
+					</div>
+					<span class="services-top__menu-desc services-main__menu-desc">УСЛУГИ</span>
+				</div>
+				<div class="services-top__menu services-main__menu">
+					<div class="services-main__scrollbar">
+						<a class="services-main__menu-link services-main__menu-link--active" href="">Офсетная печать</a>
+						<a class="services-main__menu-link" href="">Живая реклама</a>
+						<a class="services-main__menu-link" href="">Печать широкоформатная, интерьерная, УФ</a>
+						<a class="services-main__menu-link" href="">Фрезеровка и лазерная резка</a>
+						<a class="services-main__menu-link" href="">Объёмные буквы</a>
+						<a class="services-main__menu-link" href="">Световые короба</a>
+						<a class="services-main__menu-link" href="">Широкоформатная печать</a>
+						<a class="services-main__menu-link" href="">Интерьерная печать </a>
+						<a class="services-main__menu-link" href="">Рекламные вывески</a>
+						<a class="services-main__menu-link" href="">Визитные карты</a>
+						<a class="services-main__menu-link" href="">Листовки, флаеры, буклеты</a>
+						<a class="services-main__menu-link" href="">Календари</a>
+						<a class="services-main__menu-link" href="">Интерьерные вывески</a>
+						<a class="services-main__menu-link" href="">Гибкий неони</a>
+						<a class="services-main__menu-link" href="">Панель кронштейны</a>
+						<a class="services-main__menu-link" href="">Крышные установки</a>
+						<a class="services-main__menu-link" href="">Оформление витрин</a>
+						<a class="services-main__menu-link" href="">Пилоны и стелы</a>
+						<a class="services-main__menu-link" href="">Брендирование транспорта</a>
+						<a class="services-main__menu-link" href="">Живая реклама</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-top">
+		<div class="container">
+			<div class="block-top__inner">
+				<div class="block-top__left">
+					<div class="block-top__icon">
+						<img src="img/print2-icon.svg" alt="">
+					</div>
+					<h1 class="block-top__title display4">Офсетная печать</h1>
+				</div>
+				<div class="block-top__right">
+					<div class="block-top__desc">
+						<p>Если вам нужен большой тираж печатной продукции, например, листовок, визиток, брошюр и так далее, оптимальным вариантом будет офсетная печать. Благодаря данному способу удается получить большое количество высококачественных копий по выгодной цене.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="container">
+			<div class="gallery-inner">
+				<a class="gallery-img" data-fancybox="gallery2" href="img/print.webp">
+					<img src="img/print.webp" alt="">
+				</a>
+				<a class="gallery-img" data-fancybox="gallery2" href="img/print2.webp">
+					<img src="img/print2.webp" alt="">
+				</a>
+				<a class="gallery-img" data-fancybox="gallery2" href="img/print3.webp">
+					<img src="img/print3.webp" alt="">
+				</a>
+				<a class="gallery-img" data-fancybox="gallery2" href="img/print4.webp">
+					<img src="img/print4.webp" alt="">
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="print-info">
+		<div class="container">
+			<div class="print-info__inner">
+				<div class="print-info__title">
+					<h2>Цифровая и офсетная печать: в чём разница
+					</h2>
+				</div>
+				<div class="print-info__subtitle">Оптимальный метод создания полиграфической продукции подбирается с учетом бюджета, требований и особенностей проекта заказчика</div>
+				<div class="print-info__desc">
+					<div class="print-info__desc-left">
+						<div class="print-info__desc-title">Офсетный метод</div>
+						<div class="print-info__desc-text">Заключается в переносе краски на бумагу или иной носитель с привлечением спецформы со сформированным шаблоном изображения. Перенос выполняется через специальный цилиндр, изображение делается прямым, а не зеркальным, что отличает этот метод от других технологий. Имеет большую экономическую привлекательность при печате больших тиражей.</div>
+					</div>
+					<div class="print-info__desc-right">
+						<div class="print-info__desc-title">Цифровой метод</div>
+						<div class="print-info__desc-text">Перенос краски на носитель выполняется с помощью оборудования, производящего прямое нанесение или из электронных фалов. Промежуточный перенос отсутствует, применяются лазерный (для небольшой продукции) и струйный (для широкоформатной) методы. Позволяет создавать тираж от 1 штуки, демонстрируя экономическую эффективность на малых тиражах.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="print-info2">
+		<div class="container">
+			<div class="print-info2__inner">
+				<div class="print-info2__title">
+					<h2>Сферы применения</h2>
+				</div>
+				<div class="print-info2__items">
+					<div class="print-info2__item">
+						<div class="print-info2__item-title">Офсетную печать выбирают для создания:</div>
+						<ul class="print-info2__item-list">
+							<li>газет, журналов, различных книг;</li>
+							<li>листовок, буклетов, флаеров;</li>
+							<li>настольных, настенных календарей;</li>
+							<li>упаковки, этикеток, рекламного текстиля;</li>
+							<li>визиток, плакатов, другой полиграфической продукции.</li>
+						</ul>
+						<div class="print-info2__item-text">Технология нашла применение в производстве полиграфических материалов, предназначенных для маркетинга, event-индустрии, бизнеса, создания периодических изданий и т. д.</div>
+					</div>
+					<div class="print-info2__item">
+						<div class="print-info2__item-title">К основным плюсам технологии относят:</div>
+						<ul class="print-info2__item-list">
+							<li>высокое качество полиграфической продукции;</li>
+							<li>экономическую выгоду при изготовлении большой партии;</li>
+							<li>цветные и черно-белые изображения;</li>
+							<li>дополнительные технологии: вырубка, нанесение термоподъема, ламинация, фальцовка, другие;</li>
+							<li>быстрое производство крупных тиражей;</li>
+							<li>возможность переносить краску на основу маленького размера”</li>
+							<li>возможность применения пантонных цветов в том числе и особых, например с металлическим эффектом.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="print-info2__desc">
+                    Более 50% полиграфической продукции создается с помощью рассматриваемого метода,
+                    что обусловлено относительной простотой технологии (для тиражей от 1000 единиц),
+                    высоким качеством и переносом изображений разной сложности.
+                    Важный плюс – снижение стоимости единицы по мере увеличения тиража.
+                </div>
+			</div>
+		</div>
+	</section>
+	<section class="application">
+		<div class="application__inner">
+			<button class="application__btn btn-gray">Оставить заявку</button>
+			<div class="application__desc">Срок выполнения от 3 до 10 рабочих дней.</div>
+		</div>
+	</section>
+	<section class="more-services">
+		<div class="container">
+			<div class="more-services__inner">
+				<div class="more-services__slider">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__28">
+    <div class="offers-card__img">
+        <img src="img/offers28.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Меню для кафе<br> и ресторанов <span>от 500 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__18">
+    <div class="offers-card__img">
+        <img src="img/offers33.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Живая реклама <br>(пайетки)<span>от 30 000 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__26">
+    <div class="offers-card__img">
+        <img src="img/offers34.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Календари <span>от 200 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__28">
+    <div class="offers-card__img">
+        <img src="img/offers28.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Меню для кафе<br> и ресторанов <span>от 500 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__18">
+    <div class="offers-card__img">
+        <img src="img/offers33.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Живая реклама <br>(пайетки)<span>от 30 000 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="" class="offers-card offers-card__26">
+    <div class="offers-card__img">
+        <img src="img/offers34.webp" alt="">
+    </div>
+    <div class="offers-card__desc">
+        
+        <div class="offers-card__title">
+            Календари <span>от 200 руб</span>
+        </div>
+    </div>
+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="more-services__desc">
+					<div class="more-services__title">Ещё услуги</div>
+					<div class="swiper-button__btns">
+						<div class="swiper-button-prev">
+							<img src="img/arrow-prev.svg" alt="">
+							<span>Предыдущие</span>
+						</div>
+						<div class="swiper-button-next">
+							<span>Следующие</span>
+							<img src="img/arrow-next.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <a class="footer__logo" href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__title">КОНТАКТЫ</div>
+            </div>
+            <div class="footer__center">
+                <div class="footer__slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand2.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand3.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand4.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand5.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand6.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand7.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand8.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand9.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand10.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand11.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand12.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand13.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand14.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand15.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand16.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand17.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand18.svg" alt="">
+                            </a>
+                            <a href="" class="swiper-slide">
+                                <img src="img/footer-brand19.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__link footer__link--active"><a href="">Главная </a></li>
+                    <li class="footer__link"><a href="">Услуги</a></li>
+                    <li class="footer__link"><a href="">Портфолио</a></li>
+                    <li class="footer__link"><a href="">Контакты </a></li>
+                    <li class="footer__link"><a href="">Информация</a></li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <div class="footer__connection">
+                    <div class="footer__connection-top">
+                        <div class="footer__select custom_select">
+                            <select>
+                                <option value="Новороссийск">Новороссийск</option>
+                                <option value="Анапа">Анапа</option>
+                            </select>
+                        </div>
+                        <div class="footer__info">
+                            <a href="" class="footer__tel">8 (909) 44-55-000</a>
+                            <a href="" class="footer__location">ул. Энгельса 84, офис 44</a>
+                        </div>
+                    </div>
+                    <div class="footer__connection-bottom">
+                        <a class="footer__link" href="info@m4r.ru">info@m4r.ru</a>
+                        <div class="footer__socials">
+                            <a href="" class="footer__social">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.71091 0C2.72789 0.00383059 1.78623 0.39603 1.09113 1.09113C0.39603 1.78623 0.00383059 2.72789 0 3.71091V16.2891C0.00383059 17.2721 0.39603 18.2138 1.09113 18.9089C1.78623 19.604 2.72789 19.9962 3.71091 20H16.2891C17.2721 19.9962 18.2138 19.604 18.9089 18.9089C19.604 18.2138 19.9962 17.2721 20 16.2891V3.71091C19.9962 2.72789 19.604 1.78623 18.9089 1.09113C18.2138 0.39603 17.2721 0.00383059 16.2891 0H3.71091ZM3.71091 1.81818H16.2891C17.3436 1.81818 18.1818 2.65636 18.1818 3.71091V16.2891C18.1818 17.3436 17.3436 18.1818 16.2891 18.1818H3.71091C3.46191 18.1834 3.21509 18.1355 2.98474 18.0409C2.7544 17.9464 2.54512 17.807 2.36905 17.631C2.19298 17.4549 2.05362 17.2456 1.95906 17.0153C1.8645 16.7849 1.81661 16.5381 1.81818 16.2891V3.71091C1.81818 2.65636 2.65636 1.81818 3.71091 1.81818Z" fill="#EBA707"/>
+                                    <path d="M13.7351 5.55645L4.87553 9.2655C4.51901 9.43823 4.39842 9.78412 4.78936 9.97185L7.06221 10.756L12.5577 7.06881C12.8577 6.83734 13.1649 6.89906 12.9006 7.1537L8.18073 11.7932L8.03246 13.7567C8.16979 14.0598 8.42123 14.0612 8.58162 13.9106L9.88744 12.5691L12.1239 14.3873C12.6433 14.7211 12.9259 14.5057 13.0377 13.8938L14.5046 6.35293C14.6569 5.59974 14.3972 5.26787 13.7351 5.55645Z" fill="#EBA707"/>
+                                </svg>
+                            </>
+                            <a href="" class="footer__social">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.4236 13.683C7.18678 13.683 5.3406 11.3122 5.26367 7.36719H6.88503C6.93828 10.2627 8.13356 11.4892 9.08034 11.7421V7.36719H10.6071V9.86442C11.542 9.75695 12.5242 8.61897 12.8555 7.36719H14.3823C14.1278 8.90978 13.0627 10.0478 12.3053 10.5156C13.0627 10.8949 14.2758 11.8875 14.7374 13.683H13.0568C12.6958 12.4818 11.7965 11.5524 10.6071 11.426V13.683H10.4236Z" fill="#EBA707"/>
+                                    <path d="M3.71091 0C2.72789 0.00383059 1.78623 0.39603 1.09113 1.09113C0.39603 1.78623 0.00383059 2.72789 0 3.71091V16.2891C0.00383059 17.2721 0.39603 18.2138 1.09113 18.9089C1.78623 19.604 2.72789 19.9962 3.71091 20H16.2891C17.2721 19.9962 18.2138 19.604 18.9089 18.9089C19.604 18.2138 19.9962 17.2721 20 16.2891V3.71091C19.9962 2.72789 19.604 1.78623 18.9089 1.09113C18.2138 0.39603 17.2721 0.00383059 16.2891 0H3.71091ZM3.71091 1.81818H16.2891C17.3436 1.81818 18.1818 2.65636 18.1818 3.71091V16.2891C18.1818 17.3436 17.3436 18.1818 16.2891 18.1818H3.71091C3.46191 18.1834 3.21509 18.1355 2.98474 18.0409C2.7544 17.9464 2.54512 17.807 2.36905 17.631C2.19298 17.4549 2.05362 17.2456 1.95906 17.0153C1.8645 16.7849 1.81661 16.5381 1.81818 16.2891V3.71091C1.81818 2.65636 2.65636 1.81818 3.71091 1.81818Z" fill="#EBA707"/>
+                                </svg>
+                            </a>
+                            <a href="" class="footer__social">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.0781 2.90756C16.157 1.98215 15.0602 1.24849 13.8515 0.749316C12.6427 0.250143 11.3463 -0.00455533 10.0377 6.1663e-05C4.55424 6.1663e-05 0.0853842 4.44755 0.0803616 9.90754C0.0803616 11.6563 0.53993 13.3575 1.40758 14.8638L0 20L5.27875 18.6225C6.73908 19.4137 8.3751 19.8283 10.0377 19.8288H10.0427C15.5274 19.8288 19.995 15.3813 20 9.91629C20.0012 8.61385 19.7436 7.32403 19.2419 6.12115C18.7402 4.91826 18.0044 3.82609 17.0768 2.90756H17.0781ZM10.0377 18.1513C8.55474 18.1518 7.09907 17.7545 5.8237 17.0013L5.52235 16.8213L2.39076 17.6388L3.22702 14.5975L3.03114 14.2838C2.20217 12.9717 1.76375 11.4526 1.7667 9.90254C1.7667 5.37005 5.47966 1.67256 10.0427 1.67256C11.1298 1.67062 12.2065 1.8829 13.2107 2.29717C14.215 2.71144 15.1269 3.3195 15.894 4.0863C16.6638 4.85011 17.274 5.75808 17.6895 6.75784C18.105 7.75759 18.3176 8.82935 18.3149 9.91129C18.3099 14.46 14.5969 18.1513 10.0377 18.1513ZM14.5768 11.9838C14.3295 11.86 13.1077 11.2613 12.8779 11.1763C12.6494 11.095 12.4824 11.0525 12.3192 11.3C12.1522 11.5463 11.675 12.1075 11.5319 12.2688C11.3887 12.435 11.2406 12.4538 10.992 12.3313C10.7446 12.2063 9.94224 11.9463 8.99297 11.1C8.25213 10.4438 7.75615 9.63129 7.60798 9.38504C7.46484 9.13754 7.59417 9.00504 7.71848 8.88129C7.82772 8.77129 7.96584 8.59129 8.09015 8.44879C8.21572 8.30629 8.25715 8.20129 8.33877 8.03629C8.42039 7.86879 8.38146 7.72629 8.31994 7.60254C8.25715 7.47879 7.76117 6.25755 7.55148 5.76505C7.35058 5.2788 7.1459 5.3463 6.99271 5.34005C6.84957 5.3313 6.68257 5.3313 6.51557 5.3313C6.38946 5.33442 6.26535 5.36346 6.15105 5.41659C6.03674 5.46972 5.9347 5.5458 5.85133 5.64005C5.6228 5.88755 4.98368 6.4863 4.98368 7.70754C4.98368 8.92879 5.87519 10.1025 6.00075 10.2688C6.12381 10.435 7.75113 12.9338 10.2486 14.0088C10.8388 14.265 11.3034 14.4163 11.6662 14.5313C12.2627 14.7213 12.8014 14.6925 13.2308 14.6313C13.7079 14.5588 14.7012 14.0313 14.9108 13.4525C15.1168 12.8725 15.1168 12.3775 15.054 12.2738C14.9925 12.1688 14.8255 12.1075 14.5768 11.9838Z" fill="#EBA707"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
